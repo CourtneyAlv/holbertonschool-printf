@@ -16,6 +16,6 @@ void _puts(char *str)
 }
 int _printf(const char *format, ...)
 {
-    _puts(*format);
+    _puts(format);
     return 0;
 }
