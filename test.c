@@ -18,11 +18,18 @@ int _printf(const char *format, ...)
 	return(1);
 	
 	for (i = 0; format[i] != '\0'; i++)	
+		
+	
+		if (*format == '%')
+	{
+		_putchar('%');
+		format++;
 
-{
+	}
+			
 	va_end(args);
 	return (x1);
-}
+
 	
 	/* handle the conversion specifier */
 
