@@ -7,20 +7,21 @@
 int _printf(const char *format, ...)
 {
 	int i;
+	int x1 = 0;
 	va_list args;
 	va_start(args, format);
 	
 
-	format = va_arg(args, int);
+	format = va_arg(args, char *);
 
 	if (*format)
-	return(-1);
+	return(1);
 	
-	for (i = 0; i < format && format[i] != '\0'; i++)	
+	for (i = 0; format[i] != '\0'; i++)	
 
 {
 	va_end(args);
-	return (args);
+	return (x1);
 }
 	
 	/* handle the conversion specifier */
