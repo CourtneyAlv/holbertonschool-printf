@@ -6,19 +6,15 @@
 */
 int _printf(const char *format, ...)
 {
-	int i;
-	int x1 = 0;
+	int x1 = 0, i;
 	va_list args;
-	va_start(args, format);
-	
 
+	va_start(args, format);
 	format = va_arg(args, char *);
 
 	if (*format)
-	{
-		return(1);
-	
-	for (i = 0; format[i] != '\0'; i++)	
+	{ return(1);
+		for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
 		{
@@ -37,12 +33,12 @@ int _printf(const char *format, ...)
 		}
 		else if (format[i] == 'd')
 		{
-			_putchar('d')
+			_putchar('d');
 			format++;
 		}
 		else if (format[i] == 'i')
 		{
-			_putchar('i')
+			_putchar('i');
 			format++;
 		}
 	}
