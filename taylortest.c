@@ -23,14 +23,27 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			_putchar('%');
+			format++;
 		}
 		else if (format[i] == 'c')
 		{
 			_putchar('c');
+			format++;
 		}
 		else if (format[i] == 's')
 		{
 			_putchar('s');
+		format++;
+		}
+		else if (format[i] == 'd')
+		{
+			_putchar('d')
+			format++;
+		}
+		else if (format[i] == 'i')
+		{
+			_putchar('i')
+			format++;
 		}
 	}
 	}

@@ -7,23 +7,47 @@
 int _printf(const char *format, ...)
 {
 	int i;
+	int x1 = 0;
 	va_list args;
 	va_start(args, format);
 	
 
-	format = va_arg(args, int);
+	format = va_arg(args, char *);
 
 	if (*format)
-	return(-1);
+	{
+		return(1);
 	
-	for (i = 0; i < format && format[i] != '\0'; i++)	
-
-{
+	for (i = 0; format[i] != '\0'; i++)	
+	{
+		if (format[i] == '%')
+		{
+			_putchar('%');
+			format++;
+		}
+		else if (format[i] == 'c')
+		{
+			_putchar('c');
+			format++;
+		}
+		else if (format[i] == 's')
+		{
+			_putchar('s');
+		format++;
+		}
+		else if (format[i] == 'd')
+		{
+			_putchar('d')
+			format++;
+		}
+		else if (format[i] == 'i')
+		{
+			_putchar('i')
+			format++;
+		}
+	}
+	}
+	else
 	va_end(args);
-	return (args);
+	return (x1);
 }
-	
-	/* handle the conversion specifier */
-
-}		
-
