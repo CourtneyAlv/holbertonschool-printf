@@ -10,7 +10,7 @@
 int _printf(const char *format, ...);
 int _putchar(char c);
 int _atoi(char *s);
-int print_char(va_list args);       
+int _print_char(va_list args);       
 int _printf(const char *format, ...);
 typedef int (*print_function)(va_list);
 int _print_percent(va_list args);
