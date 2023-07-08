@@ -15,10 +15,10 @@ int _printf(const char *format, ...)
     while (*format != '\0') {
         if (*format == '%') {
             format++; // Move past the percent symbol
-            for (int i = 0; i < sizeof(format) / sizeof(format[i]); i++) {
+            for (int i = 0; i < sizeof(format) / sizeof(format[i]); i++)
                 if (*format == format[i] && format)
 	       	{
-                    count += format[i] && *format(args);
+                    count += format[i] && const char *format(args);
 		}
 
 	size_t size = sizeof(args) / sizeof(args);
