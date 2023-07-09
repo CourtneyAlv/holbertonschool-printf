@@ -28,20 +28,26 @@ int int_to_str(char *buffer, int num)
         length++;
 }
         int dig = 1;
-        while (dig * 10 <= num)
+        while (dig <= num)
 {
         dig *= 10;
 }
-        while (dig > 0)
+	if (neg)
 {
-        int digit = num / dig;
-        buffer[length++] = '0' + digit;
-        num %= dig;
-        dig /= 10;
+	buffer[length++] = '-';
 }
-        if (neg)
+	if (num == 0)
 {
-        buffer[length++] = '-';
+	buffer[length++] = '\0';
+} else {
+	dig /= 10;
+	while (dig > 0)
+	{
+		int digit = num / dig;
+		buffer[length++] = '0' + digit;
+		num %= dig;
+		dig /= 10;
+	}
 }
-        return (length);
+       return (length);
 }
