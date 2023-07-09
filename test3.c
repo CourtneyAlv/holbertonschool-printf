@@ -12,9 +12,9 @@ struct format_specifier {
 };
 
 static const struct format_specifier format_specifiers[] = {
-    {'c', _print_char},
+    {'c', _printch},
     {'s', print_string},
-    {'%', _print_percent}
+    {'%', _percent}
 };
 
 int _printf(const char *format, ...) {
