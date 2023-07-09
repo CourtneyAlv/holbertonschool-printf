@@ -1,5 +1,5 @@
-#ifndef _PRINTF_H
-#define _PRINTF_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,10 +10,10 @@
 int _printf(const char *format, ...);
 int _putchar(char c);
 int _atoi(char *s);
-int _print_char(va_list args);       
+int _printch(va_list args);       
 int _printf(const char *format, ...);
 typedef int (*print_function)(va_list);
-int _print_percent(va_list args);
+int _percent(va_list args);
 int print_string(va_list args);
 
 

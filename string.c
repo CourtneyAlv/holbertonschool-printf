@@ -4,7 +4,7 @@
  *
  *
 */
-int _print_string(va_list args)
+int print_string(va_list args)
 {
 	const char *str = va_arg(args, const char *);
 	if (str == NULL)
