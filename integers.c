@@ -13,7 +13,7 @@ int print_int_d(va_list args)
 	
 	if (num == 0)
 {
-	write(1, "0", 1);
+	write(1, "0", sizeof(char));
 	length++;
 }
 	else
@@ -37,7 +37,7 @@ int print_int_i(va_list args)
 	
 	if (num == 0)
 {
-	write(1, "0", 1);
+	write(1, "0", sizeof(char));
 	length++;
 }
 	else

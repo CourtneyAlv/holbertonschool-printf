@@ -3,9 +3,9 @@
  *
  *
 */
-int_unknownr(va_list args)
+int _unknownr(va_list args)
 {
-	char *str = va_args(args, char *);
+	char *str = va_arg(args, char *);
 	int count = 0;
 	
 	if (str != NULL)

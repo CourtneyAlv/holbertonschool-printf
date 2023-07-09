@@ -18,7 +18,6 @@ static const struct formatspec formatspecs[] =
 	{'%', _percent},
 	{'d', print_int_d},
 	{'i', print_int_i},
-	{'r', _unknowr},
 };
 
 int _printf(const char *format, ...)
