@@ -23,31 +23,38 @@ int int_to_str(char *buffer, int num)
 
         if (num < 0)
 {
-        neg = 1;
+	neg = 1;
         num = -num;
-        length++;
+	length++;
 }
         int dig = 1;
-        while (dig <= num)
+        while (dig * 10 <= num)
 {
         dig *= 10;
 }
 	if (neg)
 {
-	buffer[length++] = '-';
+	buffer[0] = '-';
+	length++;
+	buffer++;
 }
 	if (num == 0)
 {
-	buffer[length++] = '\0';
-} else {
-	dig /= 10;
+	buffer[0] = '0';
+	length++;
+} 
+else {
 	while (dig > 0)
 	{
 		int digit = num / dig;
-		buffer[length++] = '0' + digit;
+		buffer[0] = '0' + digit;
+		buffer++;
+		length++;
 		num %= dig;
 		dig /= 10;
 	}
 }
+	buffer[0] = '\0';
+
        return (length);
 }
