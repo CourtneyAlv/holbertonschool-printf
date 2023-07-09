@@ -15,7 +15,9 @@ static const struct formatspec formatspecs[] =
 {
 	{'c', _printch},
 	{'s', print_string},
-	{'%', _percent}
+	{'%', _percent},
+	{'d', print_int_d},
+	{'i', print_int_i},
 };
 
 int _printf(const char *format, ...)
@@ -26,7 +28,13 @@ int _printf(const char *format, ...)
 	const size_t forlength = sizeof(formatspecs) / sizeof(formatspecs[0]);
 
 	va_list args;
+
+	if (format == NULL)
+		return (-1);
+
 	va_start(args, format);
+
+
 	while (*format != '\0')
 {
 		if (*format == '%')
