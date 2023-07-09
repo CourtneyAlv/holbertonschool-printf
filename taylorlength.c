@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 	size_t size = sizeof(args) / sizeof(args);
 
 	_putchar(count);
-	return (size);
+	return (format);
 	    }
 	}
 }
