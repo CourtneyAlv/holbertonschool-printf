@@ -20,6 +20,7 @@ int int_to_str(char *buffer, int num)
 {
         int length = 0;
         int neg = 0;
+	int dig = 1;
 
         if (num < 0)
 {
@@ -27,7 +28,6 @@ int int_to_str(char *buffer, int num)
         num = -num;
 	length++;
 }
-        int dig = 1;
         while (dig * 10 <= num)
 {
         dig *= 10;
