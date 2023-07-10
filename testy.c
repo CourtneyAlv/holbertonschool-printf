@@ -49,7 +49,9 @@ int _printf(const char *format, ...)
 				}
 			}
 		
-		}else{
+		}
+		else
+		{
 			char c = *format;
 			write(1, &c, 1);
 			count++;

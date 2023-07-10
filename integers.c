@@ -10,7 +10,7 @@ int print_int_d(va_list args)
 
 	char buffer[20];
 	int length = int_to_str(buffer, (int)num);
-	
+
 	if (num == 0)
 {
 	write(1, "0", sizeof(char));
