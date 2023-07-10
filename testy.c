@@ -40,6 +40,14 @@ int _printf(const char *format, ...)
 	if (*format == '%')
 	{
 		format++;
+		if (*format == '%')
+	{
+		char c = '%';
+		write(1, &c, sizeof(char));
+		count++;
+	}
+		else
+		{
 			for (i = 0; i < forlength; i++)
 			{
 				if (*format == formatspecs[i].specifier)
@@ -48,23 +56,27 @@ int _printf(const char *format, ...)
 					break;
 				}
 			}
+		
 		if (i == forlength)
 		{
 			char c = '%';
-			write(1, &c, 1);
+			write(1, &c, sizeof(char));
 			count++;
+
 			if (*format != '\0')
 			{
+
 				c = *format;
-				write(1, &c, 1);
+				write(1, &c, sizeof(char));
 				count++;
 			}
 		}
 	}
+}	
 		else
 		{	
 			char c = *format;
-			write(1, &c, 1);
+			write(1, &c, sizeof(char));
 			count++;
 		}
 		format++;
