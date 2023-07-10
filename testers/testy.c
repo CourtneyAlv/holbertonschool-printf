@@ -22,7 +22,6 @@ static const struct formatspec formatspecs[] =
 
 int _printf(const char *format, ...)
 {
-	int found
 	int count = 0;
 	unsigned int i;
 	const size_t forlength = sizeof(formatspecs) / sizeof(formatspecs[0]);

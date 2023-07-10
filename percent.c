@@ -5,11 +5,9 @@
  * Return: The number of characters written
 */
 int _percent(va_list args)
-{
+{	
 	char percent = '%';
-
 	(void)args;
 
-	write(1, &percent, 1);
-	return (1);
+	return write(1, &percent, sizeof(char));
 }
