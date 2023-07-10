@@ -55,28 +55,21 @@ int _printf(const char *format, ...)
 				{
 					count += formatspecs[i].print_func(args);
 					break;
+				}
 			}
-		}
-		if (i == forlength)
-		{
-			char c = '%';
-			write(1, &c, sizeof(char));
-			count++;
-		}
+			if (i == forlength)
+			{
+				char c = '%';
+				write(1, &c, sizeof(char));
+				count++;
+			}
 		}
 		if (i != '\0')
 		{
 			char c = *format;
 			write(1, &c, sizeof(char));
-			count++;
+			format++;
 		}
-		else
-		{	
-		char c = *format;
-		write(1, &c, sizeof(char));
-		count++;
-		}
-	format++;
 	}
 va_end(args);
 return (count);
