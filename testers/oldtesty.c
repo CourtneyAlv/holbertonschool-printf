@@ -35,19 +35,17 @@ int _printf(const char *format, ...)
 
 
 	while (*format != '\0')
+{
+	if (*format == '%')
 	{
+		format++;
 		if (*format == '%')
-		{	format++;
-			if(*format == '\0')
-				return (-1);
-		}
-		if (*format == '%')
-		{
-			char c = '%';
-			write(1, &c, sizeof(char));
-			count++;
-		}
-		if (*format + 1 == '\0')
+	{
+		char c = '%';
+		write(1, &c, sizeof(char));
+		count++;
+	}
+		else
 		{
 			for (i = 0; i < forlength; i++)
 			{
@@ -57,26 +55,30 @@ int _printf(const char *format, ...)
 					break;
 				}
 			}
-			if (i == forlength)
-			{
-				char c = '%';
-				write(1, &c, sizeof(char));
-				count++;
-			}
+		
+		if (i == forlength)
+		{
+			char c = '%';
+			write(1, &c, sizeof(char));
+			count++;
+
 			if (*format != '\0')
 			{
-				char c = *format;
+
+				c = *format;
 				write(1, &c, sizeof(char));
 				count++;
 			}
-		}	
-		if (i != '\0')
-		{	
-		char c = *format;
-		write(1, &c, sizeof(char));
-		count++;
+		}
 	}
-	format++;
+}	
+		else
+		{	
+			char c = *format;
+			write(1, &c, sizeof(char));
+			count++;
+		}
+		format++;
 	}
 va_end(args);
 return (count);
