@@ -7,7 +7,9 @@
 int _percent(va_list args)
 {
 	char percent = '%';
+
 	(void)args;
-	
-	return write(1, &percent, sizeof(char));
+
+	write(1, &percent, 1);
+	return (1);
 }

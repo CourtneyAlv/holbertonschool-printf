@@ -15,14 +15,12 @@ static const struct formatspec formatspecs[] =
 {
 	{'c', _printch},
 	{'s', print_string},
-	{'%', _percent},
 	{'d', print_int_d},
 	{'i', print_int_i},
 };
 
 int _printf(const char *format, ...)
 {
-	int found = 0;
 	int count = 0;
 	unsigned int i;
 	const size_t forlength = sizeof(formatspecs) / sizeof(formatspecs[0]);
@@ -40,9 +38,18 @@ int _printf(const char *format, ...)
 	if (*format == '%')
 	{
 		format++;
-		if (*format == '\0')
+		if (*format == '%')
+		{
+			char c = '%';
+			write(1, &c, sizeof(char));
+			count++;
+		}
+		else if (*format == '\0')
+		{
 		break;
-		
+		}
+		else
+		{
 			for (i = 0; i < forlength; i++)
 			{
 				if (*format == formatspecs[i].specifier)
@@ -51,17 +58,18 @@ int _printf(const char *format, ...)
 					break;
 				}
 			}
-		if (!found)
+		if (i == forlength)
 			{
 			char c = '%';
 			write(1, &c, sizeof(char));
 			count++;
 			c = *format;
-			 write(1, &c, sizeof(char));
-			 count++;
+			write(1, &c, sizeof(char));
+			count++;
 			}
 		}
-		else
+	}
+	else
 		{
 			char c = *format;
 			write(1, &c, sizeof(char));
