@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _printf - building custom printf
  * @format: pointer contain specs of printf
@@ -16,13 +15,13 @@ static const struct formatspec formatspecs[] =
 {
 	{'c', _printch},
 	{'s', print_string},
+	{'%', _percent},
 	{'d', print_int_d},
 	{'i', print_int_i},
 };
 
 int _printf(const char *format, ...)
 {
-
 	int count = 0;
 	unsigned int i;
 	const size_t forlength = sizeof(formatspecs) / sizeof(formatspecs[0]);
@@ -36,38 +35,48 @@ int _printf(const char *format, ...)
 
 
 	while (*format != '\0')
-{
-	if (*format == '%')
 	{
-		format++;
+		if (*format == '%')
+		{	format++;
+			if(*format == '\0')
+				return (-1);
+		}
+		if (i == '%')
+		{
+			char c = '%';
+			write(1, &c, sizeof(char));
+			format++;
+		}
+		if (*format + 1 == '\0')
+		{
 			for (i = 0; i < forlength; i++)
 			{
 				if (*format == formatspecs[i].specifier)
 				{
 					count += formatspecs[i].print_func(args);
 					break;
-				}
 			}
+		}
 		if (i == forlength)
 		{
 			char c = '%';
-			write(1, &c, 1);
+			write(1, &c, sizeof(char));
 			count++;
-			if (*format != '\0')
-			{
-				c = *format;
-				write(1, &c, 1);
-				count++;
-			}
 		}
-	}
+		}
+		if (i != '\0')
+		{
+			char c = *format;
+			write(1, &c, sizeof(char));
+			count++;
+		}
 		else
 		{	
-			char c = *format;
-			write(1, &c, 1);
-			count++;
+		char c = *format;
+		write(1, &c, sizeof(char));
+		count++;
 		}
-		format++;
+	format++;
 	}
 va_end(args);
 return (count);
