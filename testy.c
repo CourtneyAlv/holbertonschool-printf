@@ -37,10 +37,10 @@ int _printf(const char *format, ...)
 
 	while (*format != '\0')
 {
-		if (*format == '%')
-		{
-			format++;
-				for (i = 0; i < forlength; i++)
+	if (*format == '%')
+	{
+		format++;
+			for (i = 0; i < forlength; i++)
 			{
 				if (*format == formatspecs[i].specifier)
 				{
@@ -48,10 +48,21 @@ int _printf(const char *format, ...)
 					break;
 				}
 			}
-		
-		}
-		else
+		if (i == forlength)
 		{
+			char c = '%';
+			write(1, &c, 1);
+			count++;
+			if (*format != '\0')
+			{
+				c = *format;
+				write(1, &c, 1);
+				count++;
+			}
+		}
+	}
+		else
+		{	
 			char c = *format;
 			write(1, &c, 1);
 			count++;
