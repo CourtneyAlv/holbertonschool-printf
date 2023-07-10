@@ -7,14 +7,6 @@
 #include <string.h>
 #include <unistd.h>
 
-/**
-* struct convert - defines a structure for symbols and functions
-*
-* @sym: The operator
-* @f: The function associated
-*/
-
-typedef struct convert conver_t;
 
 int _printf(const char *format, ...);
 int _putchar(char c);
