@@ -25,9 +25,9 @@ Our `_printf` function provides an easy way to format and print the output in C.
 -   `%o` - prints an unsigned octal integer
 
 #### Code Example
-
+https://ibb.co/kBDCm4T
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMTc4MjU1MSwyMTMwNDgzNDI0LDUxOT
-Q3NTU4NSwtMTMxMTY2OTc4NSwtMTIwOTM0NTU0NywtNjQ4MTY2
-MjQ0XX0=
+eyJoaXN0b3J5IjpbLTEyNTY0MjgzMywxODAxNzgyNTUxLDIxMz
+A0ODM0MjQsNTE5NDc1NTg1LC0xMzExNjY5Nzg1LC0xMjA5MzQ1
+NTQ3LC02NDgxNjYyNDRdfQ==
 -->
