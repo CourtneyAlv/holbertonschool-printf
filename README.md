@@ -36,7 +36,7 @@ int  main(void)
  return  0; 
   }
 ```
-
+{
 #### _printf code Example
 ```**#include** **"main.h"**
 
@@ -135,11 +135,10 @@ format++;
 va_end(args);
 
 **return** (count);
-
 }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzE1NzU5OTAsMTgwMTc4MjU1MSwxND
-U3MTkyMTg5LDIxMzA0ODM0MjQsNTE5NDc1NTg1LC0xMzExNjY5
-Nzg1LC0xMjA5MzQ1NTQ3LC02NDgxNjYyNDRdfQ==
+eyJoaXN0b3J5IjpbMjQwMDY2NjA5LDE4MDE3ODI1NTEsMTQ1Nz
+E5MjE4OSwyMTMwNDgzNDI0LDUxOTQ3NTU4NSwtMTMxMTY2OTc4
+NSwtMTIwOTM0NTU0NywtNjQ4MTY2MjQ0XX0=
 -->
