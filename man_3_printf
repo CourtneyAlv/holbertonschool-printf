@@ -1,15 +1,35 @@
-.TH man_3_printf "July 10 2023" "custom _printf man page"
+.TH man_3_printf "July 10 2023" "0.01"
 .SH NAME
 .b _printf
-- Created a custom printf
-.SH SYNOPSI
+- Creation of our own custom printf
+.SH SYNOPSIS
+#include "main.h"
+.br
+#include "format specs"
+.br
+int _printf(const char *format, ...);
+.br
 .b my command
-[\fIoptions\fP]
-[\fIarguments\fP]
 .SH DESCRIPTION
-This is a test file for the man file
+The _printf function takes in a format string and a variable number of arguments. The function begins to iterate through the format string and checks format specifiers, indicated by % character. If specifier is found the function then checks if any specifiers match. If match is found the relative function is called. If no match is found the '%' and following charcters are printed as is.
+.SH RETURN VALUE
+The _printf function returns the total number of characters printed.
 .SH USAGE
-blah blah blah
-.TP
-.B \ -h \-\-help
-Display help information.
+For use of _printf include the following format specifier strings.
+.IP \fB%c\fR
+Prints a single character
+.IP \fB%s\fR
+Prints a string
+.IP \fB%%\fR
+Prints a percent sign
+.IP \fB%d\fR
+Prints an integer as a decimal number
+.IP \fB%i\fR
+Prints an integer
+.SH SEE ALSO
+\fBprintf\fR(3)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Courtney Alvarado and Taylor Poe
+
