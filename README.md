@@ -16,7 +16,7 @@ Our `_printf` function provides an easy way to format and print the output in C.
 
 #### Format Specifiers
 
- -   `%c` - prints a single character
+-   `%c` - prints a single character
 -   `%s` - prints a null-terminated string
 -   `%d` or `%i` - prints a signed decimal integer
 -   `%u` - prints an unsigned decimal integer
@@ -25,7 +25,7 @@ Our `_printf` function provides an easy way to format and print the output in C.
 -   `%o` - prints an unsigned octal integer
 
 #### Code Example
-
+`
 **#include** **"main.h"**
 
 **#include** **"formatspecs.h"**
@@ -123,8 +123,9 @@ format++;
 va_end(args);
 
 **return** (count);
+``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1Njc2Mzk3NywyMTMwNDgzNDI0LDUxOT
-Q3NTU4NSwtMTMxMTY2OTc4NSwtMTIwOTM0NTU0NywtNjQ4MTY2
-MjQ0XX0=
+eyJoaXN0b3J5IjpbMTg4Njg3OTQzLDIxMzA0ODM0MjQsNTE5ND
+c1NTg1LC0xMzExNjY5Nzg1LC0xMjA5MzQ1NTQ3LC02NDgxNjYy
+NDRdfQ==
 -->
