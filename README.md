@@ -25,7 +25,8 @@ Our `_printf` function provides an easy way to format and print the output in C.
 -   `%o` - prints an unsigned octal integer
 
 #### Code Example
-`**#include** **"main.h"**
+
+**#include** **"main.h"**
 
 **#include** **"formatspecs.h"**
 
@@ -122,10 +123,8 @@ format++;
 va_end(args);
 
 **return** (count);
-
-}`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNDEwNjc2NiwyMTMwNDgzNDI0LDUxOT
+eyJoaXN0b3J5IjpbMTc1Njc2Mzk3NywyMTMwNDgzNDI0LDUxOT
 Q3NTU4NSwtMTMxMTY2OTc4NSwtMTIwOTM0NTU0NywtNjQ4MTY2
 MjQ0XX0=
 -->
