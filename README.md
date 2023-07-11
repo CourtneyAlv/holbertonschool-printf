@@ -1,7 +1,6 @@
 # README.md
 ## *_printf.c project*
 
- 
 
 ### Description:
 The code in `main.c` implements a custom `printf` function, `_printf`, which replicates the behavior of the standard `printf` function in C. It allows you to print formatted output to the console.
@@ -11,5 +10,6 @@ To use the `_printf` function, you have to include the header files: `main.h` an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDkzNDU1NDcsLTY0ODE2NjI0NF19
+eyJoaXN0b3J5IjpbLTEzMTE2Njk3ODUsLTEyMDkzNDU1NDcsLT
+Y0ODE2NjI0NF19
 -->
