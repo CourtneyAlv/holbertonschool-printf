@@ -5,3 +5,6 @@ Printf Group Project
 1. Education is when you read the fine print. Experience is what you get if you don't
 
 2. Just because it's in print doesn't mean it's the gospel
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTY0ODE2NjI0NF19
+-->
