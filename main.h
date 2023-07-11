@@ -16,7 +16,6 @@ struct formatspec
 	print_function print_func;
 };
 
-extern const struct formatspec formatspecs[];
 
 int _printf(const char *format, ...);
 int _putchar(char c);

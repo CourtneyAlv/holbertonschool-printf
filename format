@@ -1,6 +1,6 @@
 #include "main.h"
 
-const struct formatspec formatspecs[] = {
+static const struct formatspec formatspecs[] = {
         {'c', _printch},
         {'s', print_string},
         {'%', _percent},
