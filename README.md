@@ -1,6 +1,5 @@
-# README.md
-## *_printf.c project*
-
+# README.md:notebook:
+## *_printf.c project*:memo:
 
 ### Description:  
 The code in `main.c` implements a custom `printf` function, `_printf`, which replicates the behavior of the standard `printf` function in C. It allows you to print formatted output to the console.
@@ -25,6 +24,6 @@ Our `_printf` function provides an easy way to format and print the output in C.
 -   `%x` or `%X` - prints an unsigned hexadecimal integer
 -   `%o` - prints an unsigned octal integer
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTQ3NDE1MzIsNTE5NDc1NTg1LC0xMz
-ExNjY5Nzg1LC0xMjA5MzQ1NTQ3LC02NDgxNjYyNDRdfQ==
+eyJoaXN0b3J5IjpbMTYyMjQyMTQ1MSw1MTk0NzU1ODUsLTEzMT
+E2Njk3ODUsLTEyMDkzNDU1NDcsLTY0ODE2NjI0NF19
 -->
