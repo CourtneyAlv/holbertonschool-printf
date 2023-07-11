@@ -9,9 +9,13 @@
 #include <unistd.h>
 
 typedef int (*print_function)(va_list);
-
+/**
+ * struct formatspec - structure for format specifier
+ * @specifier:  format specifier character
+ * @print_func: pointer to the print function
+*/
 struct formatspec
-{ 	
+{
 	char specifier;
 	print_function print_func;
 };
@@ -20,7 +24,7 @@ struct formatspec
 int _printf(const char *format, ...);
 int _putchar(char c);
 int _atoi(char *s);
-int _printch(va_list args);       
+int _printch(va_list args);
 int _printf(const char *format, ...);
 int _percent(va_list args);
 int int_to_str(char *buffer, int num);

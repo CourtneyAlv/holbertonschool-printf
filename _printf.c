@@ -1,9 +1,9 @@
 #include "main.h"
 #include "formatspecs.h"
 /**
- * _printf - build a custom printf function
- * @format: contains info
- * Return: Result
+ * _printf - custom printf
+ * @format: format string
+ * Return: Result of characters printed
  */
 int _printf(const char *format, ...)
 {
