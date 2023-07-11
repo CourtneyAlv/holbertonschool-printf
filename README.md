@@ -36,7 +36,7 @@ int  main(void)
   }
 ```
 {
-#### _printf code Example 
+#### _printf code Example :pencil2:
 ```**#include** **"main.h"**
 
 **#include** **"formatspecs.h"**
@@ -136,9 +136,12 @@ va_end(args);
 **return** (count);
 }
 ```
+
+#### Return Value
+The `_printf` function returns the number of characters printed. If any error occurs, a negative value is returned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDU3NDY3MzYsMjQwMDY2NjA5LDE4MD
-E3ODI1NTEsMTQ1NzE5MjE4OSwyMTMwNDgzNDI0LDUxOTQ3NTU4
-NSwtMTMxMTY2OTc4NSwtMTIwOTM0NTU0NywtNjQ4MTY2MjQ0XX
-0=
+eyJoaXN0b3J5IjpbMTc2NjM1MjA1OSwyNDAwNjY2MDksMTgwMT
+c4MjU1MSwxNDU3MTkyMTg5LDIxMzA0ODM0MjQsNTE5NDc1NTg1
+LC0xMzExNjY5Nzg1LC0xMjA5MzQ1NTQ3LC02NDgxNjYyNDRdfQ
+==
 -->
