@@ -1,5 +1,5 @@
 ## README.md
-## Pri
+## _printf.c projects
 
 
 
@@ -9,5 +9,5 @@
 
 2. Just because it's in print doesn't mean it's the gospel**strong text**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTA1NjkxNzksLTY0ODE2NjI0NF19
+eyJoaXN0b3J5IjpbLTExMTQxODczMzEsLTY0ODE2NjI0NF19
 -->
