@@ -35,9 +35,111 @@ int  main(void)
  String: %s\n", num, str); 
  return  0; 
   }
+```
 
+#### _printf code Example
+```**#include** **"main.h"**
+
+**#include** **"formatspecs.h"**
+
+**/****
+
+*** _printf - custom printf**
+
+*** @format: format string**
+
+*** Return: Result of characters printed**
+
+***/**
+
+**int** _printf(**const**  **char** *format, ...)
+
+{
+
+**unsigned**  **int** i;
+
+**int** count = **0**, found_specifier = **0**;
+
+**const**  **size_t** forlength = **sizeof**(formatspecs) / **sizeof**(formatspecs[**0**]);
+
+**va_list** args;
+
+  
+
+**if** (format == **NULL**)
+
+**return** (-**1**);
+
+  
+
+va_start(args, format);
+
+  
+
+**while** (*format)
+
+{
+
+**if** (*format == **'%'**)
+
+{
+
+format++;
+
+**if** (*format == **'\0'**)
+
+**return** (-**1**);
+
+**for** (i = **0**; i < forlength; i++)
+
+{
+
+**if** (*format == formatspecs[i].specifier)
+
+{
+
+count += formatspecs[i].print_func(args);
+
+found_specifier = **1**;
+
+**break**; }
+
+}
+
+**if** (!found_specifier)
+
+{
+
+write(**1**, **"%"**, **1**);
+
+count++;
+
+write(**1**, format, **1**);
+
+count++; }
+
+} **else**
+
+{
+
+write(**1**, format, **1**);
+
+count++;
+
+}
+
+format++;
+
+}
+
+va_end(args);
+
+**return** (count);
+
+}
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0ODg1MjI0MCwxODAxNzgyNTUxLDE0NT
-cxOTIxODksMjEzMDQ4MzQyNCw1MTk0NzU1ODUsLTEzMTE2Njk3
-ODUsLTEyMDkzNDU1NDcsLTY0ODE2NjI0NF19
+eyJoaXN0b3J5IjpbLTE3NzE1NzU5OTAsMTgwMTc4MjU1MSwxND
+U3MTkyMTg5LDIxMzA0ODM0MjQsNTE5NDc1NTg1LC0xMzExNjY5
+Nzg1LC0xMjA5MzQ1NTQ3LC02NDgxNjYyNDRdfQ==
 -->
