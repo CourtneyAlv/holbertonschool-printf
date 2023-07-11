@@ -1,8 +1,8 @@
-.TH TESTY 1 "July 10 2023" "custom _printf man page"
+.TH man_3_printf "July 10 2023" "custom _printf man page"
 .SH NAME
 .b _printf
 - Created a custom printf
-.SH SYNOPSIS
+.SH SYNOPSI
 .b my command
 [\fIoptions\fP]
 [\fIarguments\fP]
