@@ -4,26 +4,12 @@
  * @format: format string
  * Return: Number of characters printed
 */
-typedef int (*print_function)(va_list);
-struct formatspec
-{ char specifier;
-print_function print_func;
-};
-
-static const struct formatspec formatspecs[] = {
-	{'c', _printch},
-	{'s', print_string},
-	{'%', _percent},
-	{'d', print_int_d},
-	{'i', print_int_d},
-};
-
 int _printf(const char *format, ...)
 {
 	unsigned int i;
 	int count = 0;
 	int found_specifier = 0;
-	const size_t forlength = sizeof(formatspecs) / sizeof(formatspecs[0]);
+	size_t forlength = sizeof(formatspecs) / sizeof(formatspecs[0]);
 	va_list args;
 
 	if (format == NULL)

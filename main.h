@@ -8,6 +8,15 @@
 #include <string.h>
 #include <unistd.h>
 
+typedef int (*print_function)(va_list);
+
+struct formatspec
+{ 	
+	char specifier;
+	print_function print_func;
+};
+
+extern const struct formatspec formatspecs[];
 
 int _printf(const char *format, ...);
 int _putchar(char c);
