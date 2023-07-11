@@ -7,10 +7,10 @@ The code in `main.c` implements a custom `printf` function, `_printf`, which rep
 ### Usage: :computer:
  To use the `_printf` function, you have to include the header files: `main.h` and `formatspecs.h`. The `main.h` header file contains function prototypes and necessary definitions. The `formatspecs.h` likely contains the definitions of format specifiers and their printing functions.
 
-#### Introduction: 
+#### Introduction: :dart:
 Our `_printf` function provides an easy way to format and print the output in C. It supports format specifiers that allow you to print different types of data with customized formatting.
 
-#### Function example
+#### Format example
  **code**
 `int _printf(const  char *format, ...);`
 
@@ -23,7 +23,10 @@ Our `_printf` function provides an easy way to format and print the output in C.
 -   `%f` - prints a floating-point number
 -   `%x` or `%X` - prints an unsigned hexadecimal integer
 -   `%o` - prints an unsigned octal integer
+
+#### Code Example
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMDQ4MzQyNCw1MTk0NzU1ODUsLTEzMT
-E2Njk3ODUsLTEyMDkzNDU1NDcsLTY0ODE2NjI0NF19
+eyJoaXN0b3J5IjpbLTE2MjM0ODI2MjUsMjEzMDQ4MzQyNCw1MT
+k0NzU1ODUsLTEzMTE2Njk3ODUsLTEyMDkzNDU1NDcsLTY0ODE2
+NjI0NF19
 -->
