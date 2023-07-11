@@ -24,8 +24,8 @@ Our `_printf` function provides an easy way to format and print the output in C.
 -   `%x` or `%X` - prints an unsigned hexadecimal integer
 -   `%o` - prints an unsigned octal integer
 
-#### Code Example
-\``#include "main.h"  
+#### Main Code Example
+```#include "main.h"  
 #include "formatspecs.h"  
 int  main(void) 
 { 
@@ -34,9 +34,10 @@ int  main(void)
  int count = _printf("Number: %d\n
  String: %s\n", num, str); 
  return  0; 
-  }``
+  }
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM1NDc4NDQxLDE4MDE3ODI1NTEsMTQ1Nz
-E5MjE4OSwyMTMwNDgzNDI0LDUxOTQ3NTU4NSwtMTMxMTY2OTc4
-NSwtMTIwOTM0NTU0NywtNjQ4MTY2MjQ0XX0=
+eyJoaXN0b3J5IjpbMTA0ODg1MjI0MCwxODAxNzgyNTUxLDE0NT
+cxOTIxODksMjEzMDQ4MzQyNCw1MTk0NzU1ODUsLTEzMTE2Njk3
+ODUsLTEyMDkzNDU1NDcsLTY0ODE2NjI0NF19
 -->
