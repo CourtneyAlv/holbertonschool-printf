@@ -25,18 +25,10 @@ int print_int_d(va_list args)
 	if (num < 0)
        	{
         	write(1, "-", sizeof(char));
+        	num = -num;
         	count++;
-		num = -num;
 	}
-	if (num == 0)
-	{
-		write(1, "0", sizeof(char));
-		count++;
-	}
-	else
-	{
        	count += print_int_helper(num);
-	}
 	return (count);
 }
 int print_int_i(va_list args)

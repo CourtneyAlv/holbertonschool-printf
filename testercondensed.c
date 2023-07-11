@@ -6,7 +6,7 @@ static const struct formatspec formatspecs[] = {
     {'s', print_string},
     {'%', _percent},
     {'d', print_int_d},
-    {'i', print_int_i}
+    {'i', print_int_d},
 };
 
 int _printf(const char *format, ...)
