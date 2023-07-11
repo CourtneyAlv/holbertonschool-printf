@@ -15,8 +15,16 @@ Our `_printf` function provides an easy way to format and print the output in C.
  **code**
 `int _printf(const  char *format, ...);`
 
-####
+#### Format Specifiers
+
+ -   `%c` - prints a single character
+-   `%s` - prints a null-terminated string
+-   `%d` or `%i` - prints a signed decimal integer
+-   `%u` - prints an unsigned decimal integer
+-   `%f` - prints a floating-point number
+-   `%x` or `%X` - prints an unsigned hexadecimal integer
+-   `%o` - prints an unsigned octal integer
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDYxMzAyMTYsLTEzMTE2Njk3ODUsLT
-EyMDkzNDU1NDcsLTY0ODE2NjI0NF19
+eyJoaXN0b3J5IjpbNTE5NDc1NTg1LC0xMzExNjY5Nzg1LC0xMj
+A5MzQ1NTQ3LC02NDgxNjYyNDRdfQ==
 -->
