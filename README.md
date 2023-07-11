@@ -1,7 +1,131 @@
-Printf Group Project
+# README.md:notebook:
+## *_printf.c project*:memo:
 
-0.) I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
+### Description: :book:
+The code in `main.c` implements a custom `printf` function, `_printf`, which replicates the behavior of the standard `printf` function in C. It allows you to print formatted output to the console.
 
-1. Education is when you read the fine print. Experience is what you get if you don't
+### Usage: :computer:
+ To use the `_printf` function, you have to include the header files: `main.h` and `formatspecs.h`. The `main.h` header file contains function prototypes and necessary definitions. The `formatspecs.h` likely contains the definitions of format specifiers and their printing functions.
 
-2. Just because it's in print doesn't mean it's the gospel
+#### Introduction: :dart:
+Our `_printf` function provides an easy way to format and print the output in C. It supports format specifiers that allow you to print different types of data with customized formatting.
+
+#### Format example
+ **code**
+`int _printf(const  char *format, ...);`
+
+#### Format Specifiers
+
+-   `%c` - prints a single character
+-   `%s` - prints a null-terminated string
+-   `%d` or `%i` - prints a signed decimal integer
+-   `%u` - prints an unsigned decimal integer
+-   `%f` - prints a floating-point number
+-   `%x` or `%X` - prints an unsigned hexadecimal integer
+-   `%o` - prints an unsigned octal integer
+
+#### Code Example
+`
+**#include** **"main.h"**
+
+**#include** **"formatspecs.h"**
+
+**/****
+
+*** _printf - custom printf**
+
+*** @format: format string**
+
+*** Return: Result of characters printed**
+
+***/**
+
+**int** _printf(**const**  **char** *format, ...)
+
+{
+
+**unsigned**  **int** i;
+
+**int** count = **0**, found_specifier = **0**;
+
+**const**  **size_t** forlength = **sizeof**(formatspecs) / **sizeof**(formatspecs[**0**]);
+
+**va_list** args;
+
+  
+
+**if** (format == **NULL**)
+
+**return** (-**1**);
+
+  
+
+va_start(args, format);
+
+  
+
+**while** (*format)
+
+{
+
+**if** (*format == **'%'**)
+
+{
+
+format++;
+
+**if** (*format == **'\0'**)
+
+**return** (-**1**);
+
+**for** (i = **0**; i < forlength; i++)
+
+{
+
+**if** (*format == formatspecs[i].specifier)
+
+{
+
+count += formatspecs[i].print_func(args);
+
+found_specifier = **1**;
+
+**break**; }
+
+}
+
+**if** (!found_specifier)
+
+{
+
+write(**1**, **"%"**, **1**);
+
+count++;
+
+write(**1**, format, **1**);
+
+count++; }
+
+} **else**
+
+{
+
+write(**1**, format, **1**);
+
+count++;
+
+}
+
+format++;
+
+}
+
+va_end(args);
+
+**return** (count);
+``
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTg4Njg3OTQzLDIxMzA0ODM0MjQsNTE5ND
+c1NTg1LC0xMzExNjY5Nzg1LC0xMjA5MzQ1NTQ3LC02NDgxNjYy
+NDRdfQ==
+-->
