@@ -135,13 +135,12 @@ va_end(args);
 
 **return** (count);
 }
-```
-
+``
 #### Return Value
 The `_printf` function returns the number of characters printed. If any error occurs, a negative value is returned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NjM1MjA1OSwyNDAwNjY2MDksMTgwMT
-c4MjU1MSwxNDU3MTkyMTg5LDIxMzA0ODM0MjQsNTE5NDc1NTg1
-LC0xMzExNjY5Nzg1LC0xMjA5MzQ1NTQ3LC02NDgxNjYyNDRdfQ
-==
+eyJoaXN0b3J5IjpbNzgyMDU3OTI3LDE3NjYzNTIwNTksMjQwMD
+Y2NjA5LDE4MDE3ODI1NTEsMTQ1NzE5MjE4OSwyMTMwNDgzNDI0
+LDUxOTQ3NTU4NSwtMTMxMTY2OTc4NSwtMTIwOTM0NTU0NywtNj
+Q4MTY2MjQ0XX0=
 -->
