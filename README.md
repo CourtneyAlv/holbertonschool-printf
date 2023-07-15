@@ -18,7 +18,7 @@ Our `_printf` function provides an easy way to format and print the output in C.
 -   `%c` - prints a single character
 -   `%s` - prints a null-terminated string
 -   `%d` or `%i` - prints a signed decimal integer
--  `%%`- to declare 
+-  `%`- to declare conversion specifiers 
 
 
 #### Main Code Example :pencil:
@@ -137,8 +137,8 @@ va_end(args);
 #### Return Value
 The `_printf` function returns the number of characters printed. If any error occurs, a negative value is returned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzU4OTkzNTAsNzgyMDU3OTI3LDE3Nj
-YzNTIwNTksMjQwMDY2NjA5LDE4MDE3ODI1NTEsMTQ1NzE5MjE4
-OSwyMTMwNDgzNDI0LDUxOTQ3NTU4NSwtMTMxMTY2OTc4NSwtMT
-IwOTM0NTU0NywtNjQ4MTY2MjQ0XX0=
+eyJoaXN0b3J5IjpbLTk4ODMyNjI0Miw3ODIwNTc5MjcsMTc2Nj
+M1MjA1OSwyNDAwNjY2MDksMTgwMTc4MjU1MSwxNDU3MTkyMTg5
+LDIxMzA0ODM0MjQsNTE5NDc1NTg1LC0xMzExNjY5Nzg1LC0xMj
+A5MzQ1NTQ3LC02NDgxNjYyNDRdfQ==
 -->
