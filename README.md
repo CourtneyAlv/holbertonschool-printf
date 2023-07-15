@@ -141,7 +141,9 @@ The `_printf` function returns the number of characters printed. If any error oc
 </code></pre>
 
 #### Compilation Process
-` gcc -
+````
+gcc -Wall -Wextra -Werror -pedantic -std=gnu89 -Wno-format *.c
+````
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ0OTQ0Nzk3XX0=
+eyJoaXN0b3J5IjpbNTI1MTQwMjU2XX0=
 -->
