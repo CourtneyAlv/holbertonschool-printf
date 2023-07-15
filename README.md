@@ -140,7 +140,8 @@ va_end(args);
 The `_printf` function returns the number of characters printed. If any error occurs, a negative value is returned.
 </code></pre>
 
-####
+#### Compilation Process
+` gcc -
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MDAxMTcwNV19
+eyJoaXN0b3J5IjpbMzQ0OTQ0Nzk3XX0=
 -->
