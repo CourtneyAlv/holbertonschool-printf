@@ -12,6 +12,19 @@ int _printf(const char *format, ...);
 .b my command
 .SH DESCRIPTION
 The _printf function takes in a format string and a variable number of arguments. The function begins to iterate through the format string and checks format specifiers, indicated by % character. If specifier is found the function then checks if any specifiers match. If match is found the relative function is called. If no match is found the '%' and following charcters are printed as is.
+.SH EXAMPLES
+.IP
+int main()
+{
+.IP
+char ch = 'A';
+.IP
+_printf("The character is %c\\n, ch);
+.IP
+return (0);
+}
+.SH OUTPUT
+The character is A
 .SH RETURN VALUE
 The _printf function returns the total number of characters printed.
 .SH USAGE
