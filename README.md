@@ -18,10 +18,8 @@ Our `_printf` function provides an easy way to format and print the output in C.
 -   `%c` - prints a single character
 -   `%s` - prints a null-terminated string
 -   `%d` or `%i` - prints a signed decimal integer
--   `%u` - prints an unsigned decimal integer
--   `%f` - prints a floating-point number
--   `%x` or `%X` - prints an unsigned hexadecimal integer
--   `%o` - prints an unsigned octal integer
+-  `%%`- to declare 
+
 
 #### Main Code Example :pencil:
 ```#include "main.h"  
@@ -139,8 +137,8 @@ va_end(args);
 #### Return Value
 The `_printf` function returns the number of characters printed. If any error occurs, a negative value is returned.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgyMDU3OTI3LDE3NjYzNTIwNTksMjQwMD
-Y2NjA5LDE4MDE3ODI1NTEsMTQ1NzE5MjE4OSwyMTMwNDgzNDI0
-LDUxOTQ3NTU4NSwtMTMxMTY2OTc4NSwtMTIwOTM0NTU0NywtNj
-Q4MTY2MjQ0XX0=
+eyJoaXN0b3J5IjpbLTEyMzU4OTkzNTAsNzgyMDU3OTI3LDE3Nj
+YzNTIwNTksMjQwMDY2NjA5LDE4MDE3ODI1NTEsMTQ1NzE5MjE4
+OSwyMTMwNDgzNDI0LDUxOTQ3NTU4NSwtMTMxMTY2OTc4NSwtMT
+IwOTM0NTU0NywtNjQ4MTY2MjQ0XX0=
 -->
