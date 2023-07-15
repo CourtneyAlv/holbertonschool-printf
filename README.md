@@ -3,26 +3,29 @@
 
 ---
 
-<h1 id="readme.mdnotebook"><a href="http://README.md">README.md</a>📓</h1>
+<h1 id="readme.mdnotebook href="http://README.md">README.md</a>📓</h1>
 <h2 id="printf.c-projectmemo"><em>_printf.c project</em>📝</h2>
-<h3 id="description-book">Description: 📖</h3>
-<p>The code in <code>main.c</code> implements a custom <code>printf</code> function, <code>_printf</code>, which replicates the behavior of the standard <code>printf</code> function in C. It allows you to print formatted output to the console.</p>
-<h3 id="usage-computer">Usage: 💻</h3>
-<p>To use the <code>_printf</code> function, you have to include the header files: <code>main.h</code> and <code>formatspecs.h</code>. The <code>main.h</code> header file contains function prototypes and necessary definitions. The <code>formatspecs.h</code> likely contains the definitions of format specifiers and their printing functions.</p>
-<h4 id="introduction-dart">Introduction: 🎯</h4>
-<p>Our <code>_printf</code> function provides an easy way to format and print the output in C. It supports format specifiers that allow you to print different types of data with customized formatting.</p>
+<h3 id="d:
+##escription-: :book">Description: 📖</h3>
+<p>The code in <code>main`ma implements a custom <code>printf</code> function, <code>`_printf</code>`, which replicates the behavior of the standard <code>printf</code>`printf` function in C. It allows you to print formattedoutput to the console.</p>
+<h3 id="usage:computerUsage: 💻</h3>
+<p>:
+ To use the <code>`_printf</code>` function, you have to include the header files: <code>main.h</code> and <code>formatspecs.h</code>. The <code>main.h</code> header file contains function prototypes and necessary definitions. The <code>formatspecs.h</code>` likely contains the definitions of format specifiers and their printing functions.</p>
+<h4 id="introduction-: :dart">Introduction: 🎯</h4>
+<p>Our <code>_printf</code>:
+Our  function provides an easy way to format and print the output in C. It supports format specifiers that allow you to print different types of data with customized formatting.</p>
 <h4 id="format-example">Format example</h4>
 <p><strong>code</strong><br>
 <code>int _printf(const char *format, ...);</code></p>
-<h4 id="format-specifiers-calling">Format Specifiers 📲</h4>
+<h4 id="format Specifiers- :calling">Format Specifiers 📲</h4>
 <ul>
-<li><code>%c</code> - prints a single character</li>
+<li><codecode>:prints a single character</li>
 <li><code>%s</code> - prints a null-terminated string</li>
 <li><code>%d</code> or <code>%i</code> - prints a signed decimal integer</li>
 <li><code>%</code>- to declare conversion specifiers</li>
 </ul>
 <h4 id="main-code-example-pencil">Main Code Example 📝</h4>
-<pre class=" language-undefined"><code class="prism language-#include language-undefined">#include "formatspecs.h"  
+<pre class=" language-undefined"><code class="prism language-#include language-undefined"> in peciie#include "formatspecs.h"  
 int  main(void) 
 { 
  int num = 42;
@@ -34,7 +37,8 @@ int  main(void)
 </code></pre>
 <p>{</p>
 <h4 id="printf-code-example-pencil2">_printf code Example ✏️</h4>
-<pre class=" language-undefined"><code class="prism language-**#include** language-undefined">
+<pre class=" language-undefined"><code class="prism language-**#include** language-undefi
+
 **#include** **"formatspecs.h"**
 
 **/****
@@ -136,3 +140,7 @@ va_end(args);
 The `_printf` function returns the number of characters printed. If any error occurs, a negative value is returned.
 </code></pre>
 
+####
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTc5MDAxMTcwNV19
+-->
